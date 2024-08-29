@@ -1,7 +1,20 @@
+// android/build.gradle (nivel de proyecto)
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()  // O jcenter() si es necesario
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.2'  // Ajusta la versión según sea necesario
+        classpath 'com.google.gms:google-services:4.3.15'  // Asegúrate de tener la versión correcta
+    }
+}
+
 allprojects {
     repositories {
         google()
-        mavenCentral()
+        mavenCentral()  // O jcenter() si es necesario
     }
 }
 
